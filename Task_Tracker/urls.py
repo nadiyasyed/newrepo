@@ -7,7 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
 
 
-        url(r'^$',views.SignupView.as_view(),name="signup_view"),
+        url(r'^$',views.SignupView.as_view()),
 
 
     )
