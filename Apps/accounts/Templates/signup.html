@@ -1,0 +1,61 @@
+{% extends 'basic.html' %}
+{% block title %}Sign Up for Task Tracker{% endblock %}
+{% block content %}
+
+    <div id="content" class="span10">
+        {{ message }}
+                        <form method="POST">
+                            {% csrf_token %}
+                        <div class="box-content user-edit-user">
+                          <div class="control-group">
+                            <label class="control-label" for="focusedInput">First Name</label>
+                            <div class="controls">
+                                    {{form.firstname}}
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label class="control-label" for="focusedInput">Last Name</label>
+                            <div class="controls">
+                                  {{form.lastname}}
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label class="control-label" for="focusedInput">Email Address</label>
+                            <div class="controls">
+                                  {{form.email}}
+                            </div>
+                          </div>
+                        {% if form.password %}
+                        <div class="control-group">
+                            <label class="control-label" for="focusedInput">Password</label>
+                            <div class="controls">
+                                  {{form.password}}
+                            </div>
+                          </div>
+                        {% endif %}
+
+                  <div class="control-group">
+                            <label class="control-label" for="selectError">Role</label>
+                            <div class="controls">
+                                 {{form.role}}
+                            </div>
+                          </div>
+
+                      <div class="form-actions">
+                        <button  type="submit" class="btn btn-primary">Ok</button>
+                        <a href="/account/super" class="btn">Cancel</a>
+                      </div>
+
+                      </form>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+    </div>
+    <div class="clearfix"></div>
+{%endblock%}
+
+

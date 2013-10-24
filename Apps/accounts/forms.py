@@ -37,7 +37,7 @@ class SignupForm(forms.Form):
                        'onfocus':"this.placeholder = ''",
                        'onblur':"this.placeholder = 'lastname'"}))
 
-    role        = forms.ChoiceField(
+    role= forms.ChoiceField(
         widget = forms.Select(),
         choices = ROLE_CHOICES ,
         initial='user',

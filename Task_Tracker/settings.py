@@ -109,6 +109,7 @@ ROOT_URLCONF = 'Task_Tracker.urls'
 WSGI_APPLICATION = 'Task_Tracker.wsgi.application'
 
 TEMPLATE_DIRS = (
+            "home/nadiya/Projects/Task_Tracker/Apps/accounts/Templates"
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
