@@ -7,7 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
 
 
-    url(r'^$',views.LoginView.as_view()),
+        url(r'^$',views.LoginView.as_view()),
 
 
     )

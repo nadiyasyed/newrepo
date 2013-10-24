@@ -1,6 +1,7 @@
-from django import forms
+from django.db import models
 
-class UserForm(forms.ModelForm):
-    email = forms.CharField(widget=forms.PasswordInput)
-    password = forms.CharField(widget=forms.PasswordInput)
+class LogUser(models.Model):
+    firstname=models.CharFIeld(max_length=20)
+    lastname = models.CharField(max_length=20)
+
 
